@@ -4,6 +4,7 @@
 :root {
   font-size: 62.5%;
 
+  --clr-brand: #FFA634;
   --clr-dark10: #121214;
   --clr-dark20: #181818;
   --clr-dark30: #a8a8a8;
@@ -18,13 +19,12 @@
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
 
-  background-color: var(--clr-dark10);
   color: var(--clr-light);
 }
 
 body {
+  background-color: var(--clr-dark10);
   min-height: 100vh;
-  width: 100vw;
 }
 
 header {

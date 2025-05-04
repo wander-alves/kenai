@@ -1,0 +1,359 @@
+body {
+  min-height: 100vh;
+  background-color: transparent;
+  background-image: url('../assets/images/batman-mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.hidden {
+  display: none;
+}
+
+.categories {
+  max-width: fit-content;
+  background-color: var(--clr-dark20);
+  padding: 0.4rem 0.8rem;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--clr-brand);
+}
+
+body>.mask {
+  background-image:
+    linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
+    linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
+    linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8));
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.4rem;
+  height: 8.1rem;
+}
+
+header a img {
+  width: 6.3rem;
+  height: 3.3rem;
+}
+
+header nav {
+  display: none;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li a {
+  text-decoration: none;
+}
+
+header button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+main {
+  padding: 4.8rem 2.4rem 5.6rem;
+}
+
+.movie {
+  max-width: 31.2rem;
+}
+
+.movie .movie-details {
+  margin-bottom: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.movie .movie-details .movie-info {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.movie .movie-details .movie-info .stars {
+  gap: 0.8rem;
+}
+
+.movie .movie-details .movie-info .stars img {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.movie .movie-details .movie-info .movie-duration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.movie .movie-description {
+  margin-bottom: 5.6rem;
+}
+
+.movie .movie-description h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+.movie .movie-description p {
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+  line-height: 1.5;
+}
+
+.movie .movie-description a {
+  width: 100%;
+  padding: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--clr-dark20);
+  text-decoration: none;
+  background-color: var(--clr-brand);
+
+  border-radius: 4px;
+
+  font-weight: 600;
+}
+
+
+.slider {
+  cursor: grab;
+}
+
+.slider:active {
+  cursor: grabbing;
+}
+
+.slider-list {
+  display: flex;
+  gap: 1.6rem;
+  overflow: hidden;
+}
+
+.card {
+  min-width: 16.8rem;
+  min-height: 25.6rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+}
+
+.card:nth-child(1) {
+  background-image: url('../assets/images/shang-chi.jpeg');
+}
+
+.card:nth-child(2) {
+  background-image: url('../assets/images/wish-dragon.jpeg');
+}
+
+.card:nth-child(3) {
+  background-image: url('../assets/images/loki.jpeg');
+}
+
+.card:nth-child(4) {
+  background-image: url('../assets/images/spider-man.jpeg');
+}
+
+.card:nth-child(5) {
+  background-image: url('../assets/images/the-witcher.jpeg');
+}
+
+.card>.mask {
+  width: 100%;
+  height: 100%;
+  padding: 1.6rem;
+  display: flex;
+  align-items: end;
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 8));
+}
+
+.card .mask .card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.card .mask .card-info .categories {
+  font-size: 0.8rem;
+  padding: 0.2rem 0.6rem;
+}
+
+.card .mask .card-info .stars {
+  gap: 0.6rem;
+}
+
+.card .mask .card-info .stars img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.card .mask .card-info h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+
+
+@media (min-width: 768px) {
+  body {
+    background-image: url('../assets/images/batman-tablet.jpg');
+  }
+
+  header {
+    padding: 2.4rem 3.2rem;
+  }
+
+  main {
+    padding-inline: 3.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  body {
+    background-image: url('../assets/images/batman.jpg');
+  }
+
+  header {
+    padding: 0 6.4rem;
+    height: 11.2rem;
+  }
+
+  header a img {
+    width: min-content;
+    height: min-content;
+  }
+
+  header nav {
+    display: block;
+  }
+
+  header nav ul {
+    min-width: 55.2rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header ul li img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  header nav ul li a {
+    text-decoration: none;
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+
+  header button {
+    display: none;
+  }
+
+  main {
+    padding-inline: 9.6rem;
+  }
+
+  .categories {
+    font-size: 1.4rem;
+  }
+
+  .movie {
+    max-width: 59.2rem;
+  }
+
+  .movie .movie-details {
+    gap: 2.4rem;
+    margin-bottom: 4.8rem;
+  }
+
+  .movie .movie-details .stars img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .movie .movie-details .movie-duration img {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .movie .movie-description {
+    margin-bottom: 9.6rem;
+  }
+
+  .movie .movie-description h1 {
+    font-size: 5.6rem;
+  }
+
+  .movie .movie-description p {
+    font-size: 2rem;
+  }
+
+  .movie .movie-description a {
+    width: 21.6rem;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .slider {
+    max-width: 121.6rem;
+  }
+
+  .card {
+    min-width: 23rem;
+    min-height: 40rem;
+  }
+
+  .card .mask {
+    padding: 2.4rem;
+  }
+
+  .card .mask .card-info .categories {
+    font-size: 1.2rem;
+  }
+
+  .card .mask .card-info .stars img {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+
+  .card .mask .card-info h3 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  main {
+    padding-inline: 35.2rem;
+  }
+}

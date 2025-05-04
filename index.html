@@ -8,12 +8,168 @@
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/home.css">
 
-  <script defer src="./js/main.js" type='module'></script>
+  <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon">
+  <script defer src="./js/home.js" type='module'></script>
   <title>Kenai - Home</title>
 </head>
 
 <body>
+  <div class="mask">
+    <header>
+      <a href="/">
+        <img src="./assets/logo.svg" alt="Kenai">
+      </a>
+      <button id="toggle-menu" title="ícone do menu">
+        <img src="./assets/icons/menu.svg" alt="menu">
+      </button>
+      <nav>
+        <ul>
+          <li>
+            <label for="search">
+              <img src="./assets/icons/search.svg" alt="Buscar">
+            </label>
+            <input id="search" type="search" class="hidden">
+          </li>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Minha lista</a></li>
+          <li>
+            <a href="#">
+              <img src="./assets/icons/notification.svg" alt="Notificações">
+            </a>
+          </li>
+          <li>
+            <a href="/profile.html" title="Perfil">
+              <img src="./assets/icons/profile.svg" alt="Perfil">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
+    <main>
+      <div class="movie">
+        <div class="movie-details">
+          <span class="categories">
+            Ação/Aventura
+          </span>
+          <div class="movie-info">
+            <span class="stars">
+              <img src="./assets/icons/star-yellow.svg" alt="star">
+              <img src="./assets/icons/star-yellow.svg" alt="star">
+              <img src="./assets/icons/star-yellow.svg" alt="star">
+              <img src="./assets/icons/star-yellow.svg" alt="star">
+              <img src="./assets/icons/star-yellow.svg" alt="star">
+            </span>
+            <span class="movie-duration"><img src="./assets/icons/clock.svg" alt="duração"> 1h 57m</span>
+          </div>
+        </div>
+
+        <div class="movie-description">
+          <h1>Batman</h1>
+          <p>Gotham City enfrenta uma nova ameaça, e Bruce Wayne assume o papel do Cavaleiro das Trevas para deter uma
+            organização criminosa. Em meio a seus próprios demônios internos, Wayne luta para salvar a cidade da
+            iminente escuridão eterna.</p>
+          <a href="#">Assistir agora</a>
+        </div>
+      </div>
+
+      <div class="slider">
+        <div class="slider-list">
+
+          <div class="card">
+            <div class="mask">
+              <div class="card-info">
+                <span class="categories">
+                  Ação/Suspense
+                </span>
+                <span class="stars">
+                  <img src="./assets/icons/star-white.svg" alt="star">
+                  <img src="./assets/icons/star-white.svg" alt="star">
+                  <img src="./assets/icons/star-white.svg" alt="star">
+                  <img src="./assets/icons/star-white.svg" alt="star">
+                  <img src="./assets/icons/star-white.svg" alt="star">
+                </span>
+                <h3>Shang-Chi</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="mask">
+              <div class="card-info">
+                <span class="categories">
+                  Ação/Suspense
+                </span>
+                <span class="stars">
+                  <img src="./assets/icons/star-white.svg" alt="star">
+                  <img src="./assets/icons/star-white.svg" alt="star">
+                  <img src="./assets/icons/star-white.svg" alt="star">
+                  <img src="./assets/icons/star-white.svg" alt="star">
+                  <img src="./assets/icons/star-white.svg" alt="star">
+                </span>
+                <h3>Wish Dragon</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="mask">
+              <div class="card-info">
+                <span class="categories">
+                  Ação/Suspense
+                </span>
+                <span class="stars">
+                  <img src="./assets/icons/star-white.svg" alt="star">
+                  <img src="./assets/icons/star-white.svg" alt="star">
+                  <img src="./assets/icons/star-white.svg" alt="star">
+                  <img src="./assets/icons/star-white.svg" alt="star">
+                  <img src="./assets/icons/star-white.svg" alt="star">
+                </span>
+                <h3>Loki</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="mask">
+              <div class="card-info">
+                <span class="categories">
+                  Ação/Suspense
+                </span>
+                <span class="stars">
+                  <img src="./assets/icons/star-white.svg" alt="star">
+                  <img src="./assets/icons/star-white.svg" alt="star">
+                  <img src="./assets/icons/star-white.svg" alt="star">
+                  <img src="./assets/icons/star-white.svg" alt="star">
+                  <img src="./assets/icons/star-white.svg" alt="star">
+                </span>
+                <h3>Spider-Man</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="mask">
+              <div class="card-info">
+                <span class="categories">
+                  Ação/Suspense
+                </span>
+                <span class="stars">
+                  <img src="./assets/icons/star-white.svg" alt="star">
+                  <img src="./assets/icons/star-white.svg" alt="star">
+                  <img src="./assets/icons/star-white.svg" alt="star">
+                  <img src="./assets/icons/star-white.svg" alt="star">
+                  <img src="./assets/icons/star-white.svg" alt="star">
+                </span>
+                <h3>The Witcher</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
 </body>
 
 </html>
