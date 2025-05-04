@@ -56,6 +56,11 @@ header nav ul li a {
   text-decoration: none;
 }
 
+header nav ul li:hover,
+header button:hover {
+  filter: brightness(0.8);
+}
+
 header button {
   display: flex;
   align-items: center;
@@ -64,6 +69,7 @@ header button {
   background-color: transparent;
   border: 0;
   cursor: pointer;
+
 }
 
 main {
@@ -263,6 +269,24 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 6.4rem;
+  }
+
+  header nav .input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+  }
+
+  header nav .input-wrapper label {
+    cursor: pointer;
+  }
+
+  header nav .input-wrapper input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #c3c3c3;
   }
 
   header ul li img {
