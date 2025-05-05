@@ -36,6 +36,7 @@ header {
   justify-content: space-between;
   padding: 2.4rem;
   height: 8.1rem;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.8);
 }
 
 header a img {
@@ -146,6 +147,11 @@ main {
   border-radius: 4px;
 
   font-weight: 600;
+  transition: filter 0.3s;
+}
+
+.movie .movie-description a:hover {
+  filter: brightness(0.9);
 }
 
 
@@ -289,6 +295,13 @@ main {
     background-color: transparent;
     border: 0;
     border-bottom: 1px solid #c3c3c3;
+  }
+
+  header nav .input-wrapper input[type="search"]::-webkit-search-decoration,
+  header nav .input-wrapper input[type="search"]::-webkit-search-cancel-button,
+  header nav .input-wrapper input[type="search"]::-webkit-search-results-button,
+  header nav .input-wrapper input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
   }
 
   header ul li img {
