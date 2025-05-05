@@ -151,6 +151,7 @@ main {
 
 .slider {
   cursor: grab;
+  scroll-behavior: smooth;
 }
 
 .slider:active {
@@ -170,6 +171,7 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 4px;
+  user-select: none;
 }
 
 .card:nth-child(1) {

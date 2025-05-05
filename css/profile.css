@@ -64,6 +64,14 @@ main button {
   align-items: center;
   justify-content: center;
   font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition-duration: 0.3s;
+  transition-property: border, color;
+}
+
+button:hover {
+  border: 1px solid var(--clr-brand);
 }
 
 @media (min-width: 768px) {
