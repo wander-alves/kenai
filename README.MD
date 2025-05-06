@@ -17,3 +17,8 @@ Como é um layout simples, preferi criar ele apenas com HTML, CSS e JavaScript b
 ## Layout
 
 - Veja esse e outros desafios no [Figma](https://www.figma.com/design/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---CodeLab?node-id=624-2&t=hmrBESepXKNwUW8l-0)
+
+
+### Exemplo do projeto em execução:
+
+![Imagem do código em execução](.github/kenai.gif)
