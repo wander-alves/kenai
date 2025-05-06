@@ -1,3 +1,23 @@
+const toggleMenu = document.getElementById('toggle-menu');
+const menu = document.querySelector('header nav');
+const main = document.querySelector('main');
+
+toggleMenu.onclick = () => {
+  menu.classList.toggle('hidden');
+  main.classList.toggle('hidden')
+}
+if (window.outerWidth >= 1024) {
+  menu.classList.remove('hidden');
+}
+
+window.addEventListener('resize', (e) => {
+  if (e.target.outerWidth >= 1024) {
+    menu.classList.remove('hidden');
+    return
+  }
+  menu.classList.add('hidden');
+})
+
 const labelSearch = document.querySelector('label');
 const inputSearch = document.querySelector('#search');
 
