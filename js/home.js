@@ -53,7 +53,6 @@ sliderList.addEventListener('mousemove', (e) => {
 
   const x = e.pageX - sliderList.offsetLeft;
   const move = (x - startX)
-  console.log(x)
   sliderList.scrollLeft = scrollLeft - move;
 
 })
